@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Search from './Search';
+import SearchComponent from './Search';
+import FetchAPI from './FetchAPI';
+import SearchYelp from './Search';
 
-class Form extends Component {
+
+class Form extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -15,13 +20,13 @@ class Form extends Component {
     }
 
     handleSubmit = event => {
+        event.preventDefault();
         this.setState({
             search: ''
-        })
-        console.log(this.state.search);
-        console.log(process.env.REACT_APP_API_KEY);
-        
-        event.preventDefault()
+        });
+        console.log('search: ',this.state.search);
+        // console.log(process.env.REACT_APP_API_KEY);
+        SearchYelp(this.state.search);
     }
 
     render() {
@@ -35,6 +40,7 @@ class Form extends Component {
                         onChange={this.hanldeSearchChange}>
                     </input>
                     <input type="submit"/>
+                   
                 </div>
             </form>
         )

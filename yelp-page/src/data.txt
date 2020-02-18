@@ -1,0 +1,7 @@
+Array(5)
+0: {id: "SlRvKftl6eD9dwQA6HUbOA", alias: "chipotle-mexican-grill-naperville", name: "Chipotle Mexican Grill", image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/DGj9fqj-3Acr6c-LzCWAzA/o.jpg", is_closed: false, …}
+1: {id: "VHMksmB-i1GUx2XNG8IAqA", alias: "chipotle-mexican-grill-naperville-2", name: "Chipotle Mexican Grill", image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/ABxIs2jycNX4p7OLdckk3w/o.jpg", is_closed: false, …}
+2: {id: "0tSdX8zQy-9L9nIkzbR58g", alias: "chipotle-mexican-grill-warrenville-2", name: "Chipotle Mexican Grill", image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/T4lxNCnPd0wAI-7PogQ2Gg/o.jpg", is_closed: false, …}
+3: {id: "oYxXqc4I_-EeEYWuhgXxIg", alias: "chipotle-mexican-grill-aurora-16", name: "Chipotle Mexican Grill", image_url: "https://s3-media4.fl.yelpcdn.com/bphoto/i5fKQj2GUlR5WBTWAzrmKQ/o.jpg", is_closed: false, …}
+4: {id: "RhmIOBEIL97N5MurA6qbvA", alias: "chipotle-mexican-grill-wheaton", name: "Chipotle Mexican Grill", image_url: "https://s3-media3.fl.yelpcdn.com/bphoto/0OgKYo1hRGPTV0URI1MQmw/o.jpg", is_closed: false, …}
+length: 5
