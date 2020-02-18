@@ -20,42 +20,19 @@ export default class FetchAPI extends React.Component {
         })
         const data = await res.json();
         this.setState({ yelpData: data.businesses, loading: false })
-        // console.log(data);
-        // console.log('yelpdata:', this.state.yelpData);
+        console.log(this.state.yelpData)
 
 
-        // const yelpResults = this.state.yelpData.map(({alias}) => {
-        //     return <p key={alias}></p>
-        // }
-        // )
-        // console.log('yelpResults', yelpResults);
-        // const yelpResults = await {ready: true};
-        this.setState({ yelpResults: this.state.yelpData, ready: true }, 
-            () => {this.state.yelpResults.map(({result}) => <div key={result.id}>{result.alias} </div>)})
-        
-        console.log('YelpResults', this.state.yelpResults);
-    
-        
+
     }
 
     render() {
-        // console.log("renderfuxn", this.state.yelpData)
-        if (this.state.loading) {
-            return <div>loadeeng</div>;
+        if (!this.state.yelpData.length){
+            return (<div>loading</div>)
         }
 
-        // if (!this.state.yelpData){
-        //     return <div>didnt get data</div>;
-        // }
-        console.log(this.state.ready)
-        console.log('renderYelpResults', this.state.yelpResults);
-
-        return (
-            <div>
-                <div>{this.state.yelpData[0].alias}</div>
-            </div>
-        )
-
-
+        let dataEntries = this.state.yelpData
+        console.log(dataEntries)
+        return(<div>loaded</div>)
     }
 }
