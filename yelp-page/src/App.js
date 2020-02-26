@@ -6,14 +6,21 @@ import Header from './components/Header';
 
 class App extends Component {
   state = {
-    
+    loading: true,
+    yelpData: {},
+    yelpResults: [],
+    ready: false
   }
+
+  formInput = (search) =>{
+    console.log('from appjs', search)
+  }
+
   render() {
     return(
     <div className="App">
       <Header />
-      <Form />
-      {/* <FetchAPI/> */}
+      <Form formInput={this.formInput}/>
     </div>
     )
   }

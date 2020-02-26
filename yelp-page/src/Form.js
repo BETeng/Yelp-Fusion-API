@@ -1,32 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import FetchAPI from './FetchAPI';
 
-class Form extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            search: ''
-        }
+class Form extends Component {
+    state = {
+        search: ''
     }
 
-    hanldeSearchChange = event => {
-        this.setState({
-            search: event.target.value
-        })
+
+    hanldeChange = event => {
+        this.setState({search: event.target.value})
     }
 
     handleSubmit = event => {
         event.preventDefault();
-        this.setState({
-            search: ''
-        });
-        console.log('search: ',this.state.search);
-        // console.log(process.env.REACT_APP_API_KEY);
-        // console.log('props', props)
-        console.log('this.props', this.props)
-
-
-        FetchAPI();
+        this.props.formInput(this.state.search);
+        this.setState({ search: '' });
     }
 
     render() {
@@ -37,10 +25,10 @@ class Form extends React.Component {
                     <input
                         type="text"
                         value={this.state.search}
-                        onChange={this.hanldeSearchChange}>
+                        onChange={this.hanldeChange}>
                     </input>
-                    <input type="submit"/>
-                   
+                    <input type="submit" />
+
                 </div>
             </form>
         )
