@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from './Form';
-import Search from './Search'
 import FetchAPI from './FetchAPI';
-import Fetch2 from './Fetch2';
+import Header from './components/Header';
 
 class App extends Component {
+  state = {
+    
+  }
   render() {
     return(
     <div className="App">
-      {/* <Form /> */}
-      <FetchAPI/>
+      <Header />
+      <Form />
+      {/* <FetchAPI/> */}
     </div>
     )
   }

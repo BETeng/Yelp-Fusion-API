@@ -31,7 +31,8 @@ export default class FetchAPI extends React.Component {
         return (
             <div>
                 {this.state.yelpData.map(entry => (
-                    <div>
+                    
+                    <div key={entry.id}>
                         <div>
                             {entry.alias}
                         </div>

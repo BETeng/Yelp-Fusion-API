@@ -1,9 +1,5 @@
 import React from 'react';
-import Search from './Search';
-import SearchComponent from './Search';
 import FetchAPI from './FetchAPI';
-import SearchYelp from './Search';
-
 
 class Form extends React.Component {
     constructor(props) {
@@ -26,7 +22,11 @@ class Form extends React.Component {
         });
         console.log('search: ',this.state.search);
         // console.log(process.env.REACT_APP_API_KEY);
-        SearchYelp(this.state.search);
+        // console.log('props', props)
+        console.log('this.props', this.props)
+
+
+        FetchAPI();
     }
 
     render() {
